@@ -1,0 +1,19 @@
+name: market_data
+version: "1.0.0"
+config-version: 2
+
+profile: market_data
+
+model-paths: ["models"]
+test-paths: ["tests"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  market_data:
+    staging:
+      +schema: staging
+      +materialized: view
+    marts:
+      +schema: marts
+      +materialized: table

@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.DS_Store
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/logs/
+*.egg-info/
+.pytest_cache/
