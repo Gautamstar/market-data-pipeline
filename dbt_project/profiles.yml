@@ -6,7 +6,7 @@ market_data:
       host: "{{ env_var('DB_HOST', 'localhost') }}"
       port: "{{ env_var('DB_PORT', '5432') | int }}"
       dbname: "{{ env_var('DB_NAME', 'market_data') }}"
-      user: "{{ env_var('DB_USER', 'postgres') }}"
-      password: "{{ env_var('DB_PASSWORD') }}"
+      user: "{{ env_var('DB_USER', 'gautam') }}"
+      password: "{{ env_var('DB_PASSWORD', '') }}"
       schema: marts
       threads: 4
